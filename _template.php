@@ -1,3 +1,16 @@
+
+
+<?php
+$handle = @fopen('pristupy.txt', 'r');
+if ($handle === false) {
+    echo 'Soubor se nepodařilo otevřít!';
+} else {
+    echo 'Soubor se podařilo otevřít!';
+    fclose($handle);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
